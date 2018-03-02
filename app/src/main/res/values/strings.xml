@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MrFox</string>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Strings related to login -->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Next</string>
+    <string name="txvTitle">Login</string>
+    <string name="txvAppBar">MrFox</string>
+    <string name="uninstall">UNINSTALL</string>
+    <string name="update">UPDATE</string>
+    <string name="metaphor">A material metaphor is the unifying theory of a rationalized space and a system of motion. The material is grounded in tactile reality, inspired by the study of paper and ink, yet technologically advanced and open to imagination and magic.  Surfaces and edges of the material provide visual cues that are grounded in reality. The use of familiar tactile attributes helps users quickly understand affordances. Yet the flexibility of the material creates new affordances that supersede those in the physical world, without breaking the rules of physics.  The fundamentals of light, surface, and movement are key to conveying how objects move, interact, and exist in space and in relation to each other. Realistic lighting shows seams, divides space, and indicates moving parts.
+    The foundational elements of print-based design – typography, grids, space, scale, color, and use of imagery – guide visual treatments. These elements do far more than please the eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge-to-edge imagery, large-scale typography, and intentional white space create a bold and graphic interface that immerse the user in the experience.
+An emphasis on user actions makes core functionality immediately apparent and provides waypoints for the user.
+</string>
+    <string name="textSplash">MrFox !</string>
+    <string name="olvidado">has olvidado la contraseña? Haz clic aqui!</string>
+</resources>

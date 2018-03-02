@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a21609143.mrfox.MyMain">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="@string/txvAppBar"
+            android:textColor="@color/white"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imgForest"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_below="@id/appbar"
+        android:background="@drawable/forest"
+        />
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgForest"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcherfox"
+            app:civ_border_color="#EEE"
+            app:civ_border_width="0dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="6"
+            app:civ_shadow_color="#999"
+            android:layout_marginRight="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="@string/txvAppBar"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTitle"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp">
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_custom"
+            android:text="@string/uninstall"
+            android:textColor="@color/colorMain"
+            android:layout_marginRight="8dp"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMain"
+            android:text="@string/update"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llButtons">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/metaphor"/>
+
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

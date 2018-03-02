@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    tools:context="com.example.a21609143.mrfox.MySplash">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imgFox"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fox">
+    </com.mikhaellopez.circularimageview.CircularImageView>
+
+    <TextView
+        android:id="@+id/txvSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textSplash"
+        android:layout_below="@id/imgFox"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="70dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
